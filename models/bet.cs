@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace praC3.models
+
+namespace prac3.Models;
+
+class Bet
 {
-    internal class bet
-    {
-    }
+    public string Team { get; set; }
+    public decimal Amount { get; set; }
 }
