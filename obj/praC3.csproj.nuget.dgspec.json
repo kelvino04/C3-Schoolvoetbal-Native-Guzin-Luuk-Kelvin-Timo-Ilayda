@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\aaa_blok_c\\praC3\\praC3.csproj": {}
+    "C:\\laragon\\www\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\praC3.csproj": {}
   },
   "projects": {
-    "C:\\aaa_blok_c\\praC3\\praC3.csproj": {
+    "C:\\laragon\\www\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\praC3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\aaa_blok_c\\praC3\\praC3.csproj",
+        "projectUniqueName": "C:\\laragon\\www\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\praC3.csproj",
         "projectName": "praC3",
-        "projectPath": "C:\\aaa_blok_c\\praC3\\praC3.csproj",
-        "packagesPath": "C:\\Users\\guzin\\.nuget\\packages\\",
-        "outputPath": "C:\\aaa_blok_c\\praC3\\obj\\",
+        "projectPath": "C:\\laragon\\www\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\praC3.csproj",
+        "packagesPath": "C:\\Users\\Ilayda Cetin\\.nuget\\packages\\",
+        "outputPath": "C:\\laragon\\www\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\guzin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ilayda Cetin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,11 +45,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -65,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
