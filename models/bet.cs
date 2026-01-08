@@ -5,10 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace prac3.Models;
+namespace praC3.Models;
 
 class Bet
 {
-    public string Team { get; set; }
-    public decimal Amount { get; set; }
+    public string Username { get; set; }
+    public int MatchId { get; set; }
+    public string Prediction { get; set; }
+    public int Amount { get; set; }
+    public bool? Won { get; set; }
 }
