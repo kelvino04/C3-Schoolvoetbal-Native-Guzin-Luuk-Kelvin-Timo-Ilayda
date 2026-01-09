@@ -11,6 +11,7 @@ namespace praC3
         static AppData data;
         static User currentUser;
         static ApiService api = new ApiService();
+        static List<Bet> BetHistory = new List<Bet>(); // Stores all bets
 
         static void Main()
         {
@@ -109,7 +110,7 @@ namespace praC3
         {
             Console.Clear();
             Console.WriteLine($"Logged in as: {currentUser.Username}");
-            Console.WriteLine("");
+            Console.WriteLine();
 
             Console.WriteLine("1. View profile");
             Console.WriteLine("2. View balance");
@@ -161,7 +162,19 @@ namespace praC3
         static void ViewBets()
         {
             Console.Clear();
-            Console.WriteLine("Bets (coming soon, API integration later)");
+            Console.WriteLine("Your Bet History:");
+            if (BetHistory.Count == 0)
+            {
+                Console.WriteLine("No bets placed yet.");
+            }
+            else
+            {
+                foreach (var b in BetHistory)
+                {
+                    string resultText = b.Result == null ? "Pending" : b.Result;
+                    Console.WriteLine($"Match: {b.MatchName}, Team: {b.TeamName}, Amount: €{b.Amount}, Result: {resultText}");
+                }
+            }
             Console.ReadKey();
             ShowMainMenu();
         }
@@ -181,6 +194,7 @@ namespace praC3
                 return;
             }
 
+            // Display matches
             for (int i = 0; i < matches.Count; i++)
             {
                 var m = matches[i];
@@ -200,7 +214,7 @@ namespace praC3
             Console.WriteLine($"2. {match.Team2.Name}");
             Console.Write("Choose team to bet on: ");
             int teamChoice = int.Parse(Console.ReadLine());
-            int teamId = teamChoice == 1 ? match.Team1.Id : match.Team2.Id;
+            string chosenTeamName = teamChoice == 1 ? match.Team1.Name : match.Team2.Name;
 
             Console.Write("Bet amount: ");
             int amount = int.Parse(Console.ReadLine());
@@ -213,16 +227,24 @@ namespace praC3
                 return;
             }
 
-            bool success = await api.PlaceBet(match.Id, teamId, amount);
-            if (success)
+            // Simulate placing bet
+            Console.WriteLine($"Match chosen: {match.Team1.Name} vs {match.Team2.Name} - {match.StartTime}");
+            Console.WriteLine($"Team chosen: {chosenTeamName}");
+            Console.WriteLine($"Bet amount: {amount} euros");
+            Console.WriteLine("Bet placed (simulation)!");
+
+
+            currentUser.Balance -= amount;
+
+            // Save bet in history
+            BetHistory.Add(new Bet
             {
-                currentUser.Balance -= amount;
-                Console.WriteLine("Bet placed successfully!");
-            }
-            else
-            {
-                Console.WriteLine("Failed to place bet.");
-            }
+                MatchId = match.Id,
+                MatchName = $"{match.Team1.Name} vs {match.Team2.Name}",
+                TeamName = chosenTeamName,
+                Amount = amount,
+                Result = null // Pending
+            });
 
             Console.ReadKey();
             ShowMainMenu();
@@ -232,20 +254,33 @@ namespace praC3
         static async Task ViewResults()
         {
             Console.Clear();
-            Console.WriteLine("Fetching results...");
-            var results = await api.GetResults();
+            var results = await api.GetResults(); // simulate finished matches
 
             if (results.Count == 0)
             {
-                Console.WriteLine("No results yet.");
-                Console.ReadKey();
-                ShowMainMenu();
-                return;
+                Console.WriteLine("Awaiting results for all matches.");
+            }
+            else
+            {
+                foreach (var r in results)
+                {
+                    Console.WriteLine($"{r.Team1.Name} {r.Score} {r.Team2.Name}");
+                }
             }
 
-            foreach (var r in results)
+            // Show bet history
+            Console.WriteLine("\nYour Bet History:");
+            if (BetHistory.Count == 0)
             {
-                Console.WriteLine($"{r.Team1.Name} {r.Score} {r.Team2.Name}");
+                Console.WriteLine("No bets placed yet.");
+            }
+            else
+            {
+                foreach (var b in BetHistory)
+                {
+                    string resultText = b.Result == null ? "Pending" : b.Result;
+                    Console.WriteLine($"Match: {b.MatchName}, Team: {b.TeamName}, Amount: {b.Amount} euros, Result: {resultText}");
+                }
             }
 
             Console.ReadKey();
@@ -277,5 +312,15 @@ namespace praC3
             currentUser = null;
             ShowAuthMenu();
         }
+    }
+
+    // ---------- Bet class ----------
+    class Bet
+    {
+        public int MatchId { get; set; }
+        public string MatchName { get; set; }
+        public string TeamName { get; set; }
+        public int Amount { get; set; }
+        public string Result { get; set; } // Pending / Win / Lose
     }
 }
