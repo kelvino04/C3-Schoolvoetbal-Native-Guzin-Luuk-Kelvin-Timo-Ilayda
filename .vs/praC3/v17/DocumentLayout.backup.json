@@ -11,12 +11,20 @@
       "RelativeMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|c:\\aaa_blok_c\\c3-schoolvoetbal-native-guzin-luuk-kelvin-timo-ilayda\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|solutionrelative:models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|c:\\aaa_blok_c\\c3-schoolvoetbal-native-guzin-luuk-kelvin-timo-ilayda\\models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|solutionrelative:models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|c:\\aaa_blok_c\\c3-schoolvoetbal-native-guzin-luuk-kelvin-timo-ilayda\\models\\matchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|solutionrelative:models\\matchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|c:\\aaa_blok_c\\c3-schoolvoetbal-native-guzin-luuk-kelvin-timo-ilayda\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|solutionrelative:models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|c:\\aaa_blok_c\\c3-schoolvoetbal-native-guzin-luuk-kelvin-timo-ilayda\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|solutionrelative:models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|c:\\aaa_blok_c\\c3-schoolvoetbal-native-guzin-luuk-kelvin-timo-ilayda\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|c:\\aaa_blok_c\\c3-schoolvoetbal-native-guzin-luuk-kelvin-timo-ilayda\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|c:\\aaa_blok_c\\c3-schoolvoetbal-native-guzin-luuk-kelvin-timo-ilayda\\models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|solutionrelative:models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15F02DFC-685C-45D5-9DBA-F44CBD1F463F}|praC3.csproj|c:\\aaa_blok_c\\c3-schoolvoetbal-native-guzin-luuk-kelvin-timo-ilayda\\data\\data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -58,27 +62,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MatchResult.cs",
+              "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Models\\MatchResult.cs",
+              "RelativeDocumentMoniker": "Models\\MatchResult.cs",
+              "ToolTip": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Models\\MatchResult.cs",
+              "RelativeToolTip": "Models\\MatchResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T18:03:47.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Team.cs",
               "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Models\\Team.cs",
               "RelativeDocumentMoniker": "Models\\Team.cs",
               "ToolTip": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Models\\Team.cs",
               "RelativeToolTip": "Models\\Team.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T19:16:06.9Z"
+              "WhenOpened": "2026-01-08T19:16:06.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -90,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AppData.cs",
               "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\AppData.cs",
               "RelativeDocumentMoniker": "AppData.cs",
@@ -102,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DataService.cs",
               "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Services\\DataService.cs",
               "RelativeDocumentMoniker": "Services\\DataService.cs",
@@ -114,19 +136,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "bet.cs",
               "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Models\\bet.cs",
               "RelativeDocumentMoniker": "Models\\bet.cs",
               "ToolTip": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Models\\bet.cs",
               "RelativeToolTip": "Models\\bet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T18:08:56.044Z"
+              "WhenOpened": "2026-01-08T18:08:56.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "data.json",
               "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Data\\data.json",
               "RelativeDocumentMoniker": "Data\\data.json",
@@ -144,13 +167,14 @@
               "RelativeDocumentMoniker": "Services\\ApiService.cs",
               "ToolTip": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Services\\ApiService.cs",
               "RelativeToolTip": "Services\\ApiService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T18:01:08.01Z"
+              "WhenOpened": "2026-01-08T18:01:08.01Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "BetService.cs",
               "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Services\\BetService.cs",
               "RelativeDocumentMoniker": "Services\\BetService.cs",
@@ -162,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
@@ -174,19 +198,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Match.cs",
               "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Models\\Match.cs",
               "RelativeDocumentMoniker": "Models\\Match.cs",
               "ToolTip": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Models\\Match.cs",
               "RelativeToolTip": "Models\\Match.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T18:00:16.102Z"
+              "WhenOpened": "2026-01-08T18:00:16.102Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -202,16 +227,12 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAuwBkBAACDAAAAAAAAAA==",
+              "ToolTip": "C:\\aaa_blok_c\\C3-Schoolvoetbal-Native-Guzin-Luuk-Kelvin-Timo-Ilayda\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAOMAAAAAAAAAAADwvyABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T09:01:09.544Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

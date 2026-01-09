@@ -5,13 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace praC3.Models;
-
-class Bet
+namespace praC3.Models
 {
-    public string Username { get; set; }
-    public int MatchId { get; set; }
-    public string Prediction { get; set; }
-    public int Amount { get; set; }
-    public bool? Won { get; set; }
+    public class Bet
+    {
+        public int MatchId { get; set; }
+        public int TeamId { get; set; }
+        public string MatchName { get; set; }
+        public string TeamName { get; set; }
+        public int Amount { get; set; }
+        public string Result { get; set; } // Pending / Won / Lost
+    }
 }

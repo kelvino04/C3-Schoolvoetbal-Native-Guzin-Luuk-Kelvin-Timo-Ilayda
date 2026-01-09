@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace praC3.Models
 {
-    public class Team
+    public class MatchResult
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Points { get; set; }
+        public int Match_Id { get; set; }
+        public int Winner_Team_Id { get; set; }
     }
 }
