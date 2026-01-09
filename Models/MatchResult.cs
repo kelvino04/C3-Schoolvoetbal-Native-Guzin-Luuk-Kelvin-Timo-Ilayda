@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace praC3.Models
 {
-    public class MatchResult
+    namespace praC3.Models
     {
-        public int Match_Id { get; set; }
-        public int Winner_Team_Id { get; set; }
+        public class MatchResult
+        {
+            public int Match_Id { get; set; }
+            public Team Team1 { get; set; }  // use existing Team class
+            public Team Team2 { get; set; }
+            public string Score { get; set; } // "5-1"
+        }
     }
+
+
 }

@@ -1,38 +1,27 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
-using praC3;
+using praC3.Models;
 
 namespace praC3.Services
 {
     public static class DataService
     {
-        private static string folder = "Data";
-        private static string path = "Data/data.json";
+        private static string filePath = "appdata.json";
 
         public static AppData Load()
         {
-            if (!Directory.Exists(folder))
-                Directory.CreateDirectory(folder);
+            if (!File.Exists(filePath))
+                return new AppData();
 
-            if (!File.Exists(path))
-                File.WriteAllText(path, "{\"Users\":[],\"Matches\":[],\"Bets\":[]}");
-
-            string json = File.ReadAllText(path);
+            string json = File.ReadAllText(filePath);
             return JsonSerializer.Deserialize<AppData>(json);
         }
 
         public static void Save(AppData data)
         {
-            if (!Directory.Exists(folder))
-                Directory.CreateDirectory(folder);
-
-            string json = JsonSerializer.Serialize(data, new JsonSerializerOptions
-            {
-                WriteIndented = true
-            });
-
-            File.WriteAllText(path, json);
+            string json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(filePath, json);
         }
     }
 }
